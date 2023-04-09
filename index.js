@@ -26,6 +26,9 @@ mongoose.connect(uri)
   .catch(err => console.error(err.message));
 
 
+app.get('/', (req, res) => {
+  res.send('Working')
+})
 
 // Image API
 
